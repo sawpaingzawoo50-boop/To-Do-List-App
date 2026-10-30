@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mochi To-Do</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Splash Window -->
+      <section id="splash">
+        <div class="splash-logo"></div>
+
+        <h1 class="splash-title">Mochi To-Do</h1>
+
+        <p class="splash-tagline">
+            Stay focused. Get it done.
+        </p>
+
+        <div class="progress-track">
+            <div class="progress-bar"></div>
+        </div>
+    </section>
+    <!-- The end of splash window -->
+
+      <header class="app-header">
+        <p class="eyebrow" id="day"></p>
+        <h1>My Tasks</h1>
+        <p class="subtitle">Stay focused. Get it done.</p>
+      </header>
+
+      <form class="add-task" id="task-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Add a new task..."
+          required
+        />
+        <select id="task-priority" aria-label="Priority">
+          <option value="" disabled selected hidden>Priority</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+        <button type="submit">+ Add</button>
+      </form>
+      <nav class="filters" aria-label="Filters">
+        <a href="#" id="task-all" class="active">All</a>
+        <a href="#" id="task-active">Active</a>
+        <a href="#" id="task-done">Done</a>
+      </nav>
+
+      <ul class="task-list"></ul>
+
+      <footer class="app-footer">
+        <p><span id="number">0</span> tasks left</p>
+        <p>Made with Mochi 🍡</p>
+      </footer>
+    </main>
+
+    <!-- Script of JavaScript-->
+     <script src="app.js"></script>
+  </body>
+</html>

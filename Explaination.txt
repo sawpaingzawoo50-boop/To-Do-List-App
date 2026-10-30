@@ -1,0 +1,14 @@
+This to do list app have created by HTML, CSS and JavaScript. 
+
+It will work or you can use like - 
+- Adding your task
+- checked when it has done
+- filtering the task make sure 
+- Deleting the tasks 
+- Showing how many tasks left to be done
+
+// REMARK
+If you didn't completed your tasks, it would carry the tasks until tomorrow. or
+if you completed your task, it would refresh from the beginning. 
+  
+
